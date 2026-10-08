@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ❓ Ask a question
+    url: https://github.com/Geological-Survey-of-Western-Australia/gswa-hackathon-2026/discussions/new?category=q-a
+    about: Questions for organisers or GSWA experts go in Q&A, not issues.
+  - name: 👋 Find a team or share an idea
+    url: https://github.com/Geological-Survey-of-Western-Australia/gswa-hackathon-2026/discussions
+    about: Introduce yourself and connect with other participants in Discussions.
+  - name: 🗓️ Event details and terms
+    url: https://www.wa.gov.au/organisation/department-of-mines-petroleum-and-exploration/geological-survey-of-western-australia/gswa-hackathons
+    about: Schedule, terms and conditions on the GSWA Hackathon website.

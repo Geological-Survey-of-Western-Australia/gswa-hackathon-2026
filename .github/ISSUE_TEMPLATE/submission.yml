@@ -1,0 +1,122 @@
+name: Team submission
+description: Submit your team's project for the 2026 GSWA HyLogger Hackathon
+title: "[Submission] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking part! Please complete this form before the submission deadline.
+        Before submitting, make sure your project repo is **public** and has a README.
+        Judging will use the latest commit on your default branch at the submission deadline. Anything pushed after the deadline won't be considered.
+
+  - type: input
+    id: team
+    attributes:
+      label: Team name
+    validations:
+      required: true
+
+  - type: input
+    id: captain
+    attributes:
+      label: Team captain
+      description: The main contact for organisers (name and GitHub username)
+      placeholder: Jane Smith, @janesmith
+    validations:
+      required: true
+
+  - type: textarea
+    id: members
+    attributes:
+      label: Team members
+      description: One per line, with GitHub usernames (e.g. Jane Smith, @janesmith)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Challenge theme
+      options:
+        - Data Crunch
+        - Data Adoption
+        - Data Visualisation & Interactivity
+    validations:
+      required: true
+
+  - type: input
+    id: repo
+    attributes:
+      label: Project repository
+      placeholder: https://github.com/your-team/your-project
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Project summary
+      description: What problem did you tackle, what did you build, and why does it matter?
+    validations:
+      required: true
+
+  - type: textarea
+    id: data
+    attributes:
+      label: Data used
+      description: Which HyLogger packages, drillholes or other datasets did you use?
+    validations:
+      required: true
+
+  - type: textarea
+    id: tools
+    attributes:
+      label: Tools and technologies
+      description: e.g. Python, pytsg, QGIS, scikit-learn, Plotly, three.js
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ### AI usage declaration
+        Using AI tools (e.g. ChatGPT, Claude, GitHub Copilot) is allowed and **will not be penalised**. We ask for this purely for transparency, so judges understand how your project was built.
+
+  - type: dropdown
+    id: ai_used
+    attributes:
+      label: Did your team use AI tools?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: textarea
+    id: ai_details
+    attributes:
+      label: How did you use AI tools?
+      description: If yes, briefly describe which tools you used and what for (e.g. "Copilot for code completion, Claude to help debug the clustering pipeline and draft the README").
+    validations:
+      required: false
+
+  - type: input
+    id: demo
+    attributes:
+      label: Demo, video or slides (optional)
+      placeholder: https://
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: Our repository is public and includes a README explaining how to run the project
+          required: true
+        - label: We have not committed HyLogger data or any confidential data to our repository
+          required: true
+        - label: We have read and agree to the hackathon terms and conditions
+          required: true
