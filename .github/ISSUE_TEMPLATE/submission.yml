@@ -96,8 +96,8 @@ body:
   - type: textarea
     id: slides
     attributes:
-      label: Presentation slides
-      description: Drag and drop your slides (PDF or PPTX, max 25 MB) into this box, or paste a link to them. PDF is preferred so they display the same for everyone.
+      label: Pitch slides
+      description: The slides you'll present at the in-person pitches on Friday. Drag and drop your slides (PDF or PPTX, max 25 MB) into this box, or paste a link to them. PDF is preferred so they display the same for everyone.
     validations:
       required: true
 
