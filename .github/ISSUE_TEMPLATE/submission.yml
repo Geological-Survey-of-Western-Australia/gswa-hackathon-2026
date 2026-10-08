@@ -94,17 +94,17 @@ body:
       required: true
 
   - type: textarea
-    id: ai_details
+    id: slides
     attributes:
-      label: How did you use AI tools?
-      description: If yes, briefly describe which tools you used and what for (e.g. "Copilot for code completion, Claude to help debug the clustering pipeline and draft the README").
+      label: Presentation slides
+      description: Drag and drop your slides (PDF or PPTX, max 25 MB) into this box, or paste a link to them. PDF is preferred so they display the same for everyone.
     validations:
-      required: false
+      required: true
 
   - type: input
     id: demo
     attributes:
-      label: Demo, video or slides (optional)
+      label: Demo or video link (optional)
       placeholder: https://
     validations:
       required: false
@@ -118,5 +118,5 @@ body:
           required: true
         - label: We have not committed HyLogger data or any confidential data to our repository
           required: true
-        - label: We have read and agree to the hackathon terms and conditions
+        - label: We have read and agree to the hackathon terms and conditions, available on the [GSWA Hackathon website](https://www.wa.gov.au/organisation/department-of-mines-petroleum-and-exploration/geological-survey-of-western-australia/gswa-hackathons)
           required: true
